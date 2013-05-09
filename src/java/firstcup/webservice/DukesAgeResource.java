@@ -45,7 +45,7 @@ public class DukesAgeResource {
         // Calculate Duke's age
         int dukesAge = now.get(Calendar.YEAR) - dukesBirthday.get(Calendar.YEAR);
         if (now.before(dukesBirthday)) {
-            dukesAge- = dukesAge - 1;
+            dukesAge = dukesAge - 1;
         }
         
         // Return the Duke's age
