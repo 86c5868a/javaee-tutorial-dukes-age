@@ -36,15 +36,19 @@ public class DukesAgeResource {
     @GET
     @Produces("text/plain")
     public String getText() {
+        // Duke's birthday
         Calendar dukesBirthday = new GregorianCalendar(1995, Calendar.MAY, 23);
+        
+        // Current date 
         Calendar now = GregorianCalendar.getInstance();
         
+        // Calculate Duke's age
         int dukesAge = now.get(Calendar.YEAR) - dukesBirthday.get(Calendar.YEAR);
-        
         if (now.before(dukesBirthday)) {
             dukesAge--;
         }
         
+        // Return the Duke's age
         return Integer.toString(dukesAge);
     }
 }
