@@ -27,6 +27,7 @@ public class DukesAgeResource {
      * Creates a new instance of DukesAgeResource
      */
     public DukesAgeResource() {
+        // Empty constructor
     }
 
     /**
